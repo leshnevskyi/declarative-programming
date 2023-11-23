@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Lib (isValidPercentage, stringMul)
+import Lib.Utils (isValidPercentage, stringMul)
 
 main :: IO ()
 main = do

@@ -27,6 +27,7 @@ library
   exposed-modules:
       Lib.Data.BST
       Lib.Data.List
+      Lib.Utils
   other-modules:
       Paths_declarative_programming
   hs-source-dirs:

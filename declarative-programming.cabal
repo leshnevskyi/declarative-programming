@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Lib.Data.BST
+      Lib.Data.List
   other-modules:
       Paths_declarative_programming
   hs-source-dirs:

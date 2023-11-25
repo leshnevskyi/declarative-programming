@@ -8,7 +8,7 @@ module Lib.Data.BST
   )
 where
 
-data BST a = Nil | Node a (BST a) (BST a)
+data BST a = Nil | Node a (BST a) (BST a) deriving (Show, Eq)
 
 singleton :: a -> BST a
 singleton x = Node x Nil Nil

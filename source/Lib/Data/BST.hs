@@ -1,5 +1,5 @@
 module Lib.Data.BST
-  ( BST,
+  ( BST (..),
     singleton,
     insert,
     Lib.Data.BST.elem,

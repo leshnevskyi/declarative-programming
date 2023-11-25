@@ -28,7 +28,7 @@ x `elem` (Node a leftTree rightTree)
   | otherwise = True
 
 fromList :: (Ord a) => [a] -> BST a
-fromList = foldr insert Nil
+fromList = foldl (flip insert) Nil
 
 findByLevel :: Int -> BST a -> [a]
 findByLevel _ Nil = []

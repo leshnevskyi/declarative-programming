@@ -53,6 +53,8 @@ test-suite declarative-programming-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Lib.Data.BSTSpec
+      Lib.Data.ListSpec
       Paths_declarative_programming
   hs-source-dirs:
       test
@@ -60,4 +62,5 @@ test-suite declarative-programming-test
   build-depends:
       base >=4.7 && <5
     , declarative-programming
+    , hspec
   default-language: Haskell2010

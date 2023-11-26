@@ -2,6 +2,7 @@ module Lib.Data.List
   ( Lib.Data.List.product,
     product',
     product'',
+    quickSort,
   )
 where
 
@@ -17,3 +18,8 @@ product'' = product''' 1
   where
     product''' acc [] = acc
     product''' acc (x : xs) = product''' (x * acc) xs
+
+quickSort :: (Ord a) => [a] -> [a]
+quickSort [] = []
+quickSort (x : xs) =
+  quickSort (filter (< x) xs) ++ [x] ++ quickSort (filter (>= x) xs)

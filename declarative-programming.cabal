@@ -27,6 +27,9 @@ library
   exposed-modules:
       Lib.Data.BST
       Lib.Data.List
+      Lib.Data.Time.Calendar
+      Lib.Leasing.LeasableAsset
+      Lib.Leasing.LeaseAgreement
       Lib.Math
       Lib.Utils
   other-modules:
@@ -36,6 +39,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , time >=1.12
   default-language: Haskell2010
 
 executable declarative-programming-exe
@@ -48,6 +52,7 @@ executable declarative-programming-exe
   build-depends:
       base >=4.7 && <5
     , declarative-programming
+    , time >=1.12
   default-language: Haskell2010
 
 test-suite declarative-programming-test
@@ -56,6 +61,7 @@ test-suite declarative-programming-test
   other-modules:
       Lib.Data.BSTSpec
       Lib.Data.ListSpec
+      Lib.Leasing.LeaseAgreementSpec
       Paths_declarative_programming
   hs-source-dirs:
       test
@@ -64,4 +70,5 @@ test-suite declarative-programming-test
       base >=4.7 && <5
     , declarative-programming
     , hspec
+    , time >=1.12
   default-language: Haskell2010

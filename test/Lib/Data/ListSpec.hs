@@ -18,3 +18,6 @@ spec = do
       it "are equivalent" $ do
         List.product ([1 .. 10] :: [Int]) `shouldBe` List.product' [1 .. 10]
         List.product ([1 .. 10] :: [Int]) `shouldBe` List.product'' [1 .. 10]
+    describe "quickSort" $ do
+      it "returns the sorted list" $ do
+        List.quickSort ([3, 1, 5, 2, 4] :: [Int]) `shouldBe` [1, 2, 3, 4, 5]

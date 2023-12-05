@@ -62,6 +62,7 @@ test-suite declarative-programming-test
       Lib.Data.BSTSpec
       Lib.Data.ListSpec
       Lib.Leasing.LeaseAgreementSpec
+      Lib.MathSpec
       Paths_declarative_programming
   hs-source-dirs:
       test
